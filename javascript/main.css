@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+}
+.profile{
+    width: 65px;
+    margin-right: 8px;
+}
+.profile-container{
+    max-width: 230px;
+    display: flex;
+    align-items: center;
+}
+.profile ,h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: #707070;
+}
+.navbar,ul{
+   margin-left: 28rem;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-top: -23px
+}
+.fixed{
+    position: fixed;
+    top: 20px;
+}
+li{
+list-style: none;
+}
+.menu{
+    width: 20px;
+    display: none;
+}
+a{
+    color: #707070;
+    text-decoration: none;
+    font-size: 13px;
+}
+header{
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url(assets/landingbg.svg);
+    background-size: cover;
+    min-height:85vh ;
+}
+.social-button-1{
+    width: 20px;
+}
+.social-button-2{
+    width: 20px;
+}
+.social-button-3{
+    width: 20px;
+}
+.socials{
+    margin-top: 290px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 240px;
+}
+.person{
+    width: 400px;
+    margin-top: -2rem;
+}
+.text-image-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 13rem;
+    gap: 15rem;
+    left: 0.1rem;
+    line-height: 1.9rem;
+}
+.blue{
+    color: #07004D;
+    font-size: 25px;
+    font-weight: 500;
+}
+.black{
+    font-size: 30px;
+    font-weight: 700;
+    color: #122C34;
+}
+@media only screen and (min-width: 800px) and (max-width:920px){
+    .navbar,ul{
+        margin-left: 315px;
+    }
+    .text-image-container{
+        left: 2rem;
+        gap: 10px;
+    }
+    .socials{
+        margin-left: 1px;
+    }
+    .container{
+        width: 700px;
+    }
+    header{
+        padding-top: 1%;
+        padding-left: 2%;
+        width: 100%;
+        max-width: 920px;
+        min-height: 55vh;
+        background-position: bottom;
+    }
+    .person{
+        width: 500px;
+        margin-right: 3rem;
+    }
+    .socials{
+        width: 120px;
+        top: 18rem;
+    }
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+    .navbar a{
+        font-size: 12px;
+        word-wrap: none;
+        display: none;
+    }
+    .menu{
+        display: flex;
+        margin-left: 8rem;
+    }
+    .profile-container{
+        margin-top: 12px;
+        margin-left: 20px;
+    }
+    .profile-container h3{
+        display: none;
+    }
+    .fixed{
+      position: fixed;
+      top: 10px;
+      left: 30px;
+      right: 30px;
+    }
+    .text-image-container{
+        top: 18rem;
+        left: 8rem;
+        gap: 2rem;
+        justify-content: center;
+        white-space: nowrap;
+    }
+    .hi{
+        font-size: 1.5rem;
+    }
+    .blue{
+        font-size: 2rem;
+    }
+}
+@media screen  and (max-width:425px){
+    body{
+        max-width: 100%;
+        min-height: 100vh;
+    }
+    header{
+        padding: 0;
+        background-size: cover;
+        background-position: top;
+        max-width: 425px;
+        width: 100%;
+    }
+    .person{
+        width: 302px;
+    }
+    .text-image-container{
+        flex-direction: column;
+        gap: 1rem;
+        top: 10rem;
+        align-items: center;
+    }
+    .profile{
+        width: 50px;
+    }
+    .hi,.blue,.black{
+        text-align: center;
+    }
+    .socials{
+        top: 25rem;
+        flex-direction: row;
+        left: 1rem;
+    }
+    .fixed{
+        left: 20px;
+    }
+}
+@media screen and (max-width:375px){
+    .socials{
+        margin-top: 5rem;
+    }
+}
+@media screen and (max-width:390px) {
+    .socials{
+        margin-top: 5rem;
+    }
+}
